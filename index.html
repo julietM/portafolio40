@@ -4,22 +4,36 @@
     </head>
     <style>
         body{
-            background: #397C71    ;
-            margin: 40px;
+            
+     background: url(https://thumbs.dreamstime.com/b/fondo-blanco-del-modelo-de-la-pared-de-ladrillo-50335797.jpg);
+     
+        background-position: center;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: 450px 350px 10px;
+            grid-template-rows: 200px;
+            grid-gap: 10px;           
+            margin-left: 50;
         }
 img{
-    width: 400px;
-    padding: 10px 10px 10px 10px;
-    border:20px;
-    background: white;
-    margin: 0;
-    float: center;   
+    width: 300px;
+    height: 300px;
+    animation-name: anima2; 
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+         
     
+}
+@keyframes anima2{
+    0%{transform: rotateY(350deg);}
+    50%{transform: rotateY(260);}
+    100%{transform: rotate(0);}
 }
     
     h1{
      
-        color: white;
+        color: #1D1A1A;
         font-family:Papyrus;
         font-size: 50px;
     }  
@@ -29,8 +43,8 @@ img{
          height: 200px;
          border-radius: 50%;
          background: #010C11; 
-         margin-left:980px;  
-         margin-top:-250px;
+         margin-left:100px;  
+         margin-top:70px;
         }
         .luna:hover{
             background: white;
@@ -53,20 +67,20 @@ img{
 .dropdownmenu li {
 	float: left;
 	position: relative;
-	width:423px;
+	width:255px;
 }
 .dropdownmenu a {
-	background: #05776E;
+	background: #18181A;
 	color: #F0EAEA;
 	display: block;
 	font: bold 12px/20px sans-serif;
-	padding: 10px 25px;
+	padding: 10px 10px;
 	text-align: center;
 	text-decoration: none;
 	
 }
 .dropdownmenu li:hover a {
-	background: #0B8B65;
+	background: #777A79;
 }
 #submenu {
 	left: 0;
@@ -86,10 +100,10 @@ li:hover ul#submenu {
 	width: 100%;
 }
 #submenu a:hover {
-	background: #86D606;
+	background: #4D4E4A;
 }
 #submenu a {
-	background-color:#06AF4C;
+	background-color:#323534;
 }
 
     
@@ -102,7 +116,7 @@ li:hover ul#submenu {
         <ul>
             <li><a href="file:///C:/Users/julie/Desktop/imagen/2index.html">INICIO</a>
               
-               <li><a href="#">imagen</a>
+               <li><a href="#">Animacion</a>
                    
                 <ul id="submenu">
             
@@ -113,15 +127,39 @@ li:hover ul#submenu {
             <li><a href="https://julietm.github.io/balon/">balon</a></li>
             <li><a href="https://julietm.github.io/hamburguesa/">hamburguesa</a></li>
             <li><a href="https://julietm.github.io/Grid/">Grid</a></li>
+            <li><a href="https://julietm.github.io/carreras/">carreras</a></li>
+            <li><a href="https://julietm.github.io/huevo/">huevo</a></li>
+            <li><a href=" https://julietm.github.io/fotografia/">fotografia</a></li>
+            <li><a href="https://julietm.github.io/Anicolor/">circulo color</a></li>
+            <li><a href="https://julietm.github.io/triangulo/">triangulo</a></li>
                 </a></li>
              </ul>
-         </li>   
-         <li><a href="https://julietm.github.io/Contacto2/">Contacto</a></li>     
+         </li>
+         <li><a href="https://julietm.github.io/svg/">Dibujo</a>   
+         <ul id="submenu">
+             <li><a href="https://julietm.github.io/svg/">SVG</a></li>
+             <li><a href="https://julietm.github.io/magica/">Magica Voxel</a></li>
+         </a></li>
+         </ul>
+        </li>                
+         <li><a href="https://julietm.github.io/magica/">JavaScript</a>
+         <ul id="submenu">
+             <li><a href="https://julietm.github.io/emocion/">cara</a></li>
+             <li><a href="https://julietm.github.io/practica/">Geomatica</a></li>
+             <li><a href="https://julietm.github.io/carro/">carro</a></li>
+             <li><a href="https://julietm.github.io/sphere/">esfera</a></li>
+             <li><a href="https://julietm.github.io/circolores/">criculo color</a></li>
+            </a></li>
+        </ul>
+       </li>
+       
+         <li><a href="https://julietm.github.io/contacto4/">Contacto</a></li>     
     </ul>
 </nav>
 
                
         <hr width=100%>
+        <div class="wrapper">
        <img src="gafas.svg"/>       
         <img  src="avion.svg"/>      
        <img src="tienda.svg"/>    
@@ -139,7 +177,9 @@ li:hover ul#submenu {
         <img src="bomba.svg"/>
         <img src="celular.svg"/>
         <img src="h.svg"/>
-        <div class="luna"></div>
+        <div class="luna">
+
+        </div>
  
      
     
